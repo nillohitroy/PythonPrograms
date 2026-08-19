@@ -25,12 +25,10 @@ def near_prime(num):
 
 def is_prime(num):
     if prime(num):
-        a = True
-        return a, num
+        return True, num
     else:
-        b = False
         c = near_prime(num)
-        return b, c
+    return False, c
     
 num = int(input("Enter a number: "))
 x, y = is_prime(num)
