@@ -28,7 +28,7 @@ def is_prime(num):
         return True, num
     else:
         c = near_prime(num)
-    return False, c
+        return False, c
     
 num = int(input("Enter a number: "))
 x, y = is_prime(num)
